@@ -1,0 +1,55 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #1E1F26;
+  overflow: hidden;
+}
+
+#cat {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+#cross {
+  position: absolute;
+  transition-duration: 0.1s;
+}
+#cross:before, #cross:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+#cross:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cat {
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-duration: 0.3s;
+}
+
+#yellow {
+  left: 15%;
+}
+
+#grey {
+  left: 30%;
+}
+
+#blue {
+  left: 45%;
+}
